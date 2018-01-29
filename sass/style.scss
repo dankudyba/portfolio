@@ -1,0 +1,54 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "../bower_components/font-awesome/scss/font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:400,400i,600,600i,700,700i|Work+Sans:400,500,600,700,800,900');
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	margin: 0;
+	padding: 50px 0;
+	font-family: 'Lato', sans-serif;
+}
+.navbar-brand {
+	padding: 10px;
+	padding-left: 25px;
+	img {
+		width: 60px;
+	}
+}
+.navbar-nav {
+	padding-left: 50px;
+	li>a {
+		text-align: center;
+	}
+}
+.navbar-default {
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+.navbar-toggle {
+	.icon-bar {
+		position: relative;
+		transition: all 500ms ease-in-out;
+		&:nth-of-type(2){
+			top: 1px;
+		}
+		&:nth-of-type(3){
+			top: 2px;
+		}
+  	}
+	&.active .icon-bar:nth-of-type(1) {
+		top: 6px;
+		transform: rotate(45deg);
+	}
+	&.active .icon-bar:nth-of-type(2) {
+		background-color: transparent;
+	  }
+	&.active .icon-bar:nth-of-type(3) {
+	top: -6px;
+	transform: rotate(-45deg);
+	}
+}
