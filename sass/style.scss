@@ -3,6 +3,8 @@
 @import "../bower_components/font-awesome/scss/font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:400,400i,600,600i,700,700i|Work+Sans:400,500,600,700,800,900');
 
+$primary-color: #EEEDED;
+
 body {
 	padding: 0;
 	margin: 0;
@@ -52,3 +54,193 @@ body {
 	transform: rotate(-45deg);
 	}
 }
+.main-section {
+	background: $primary-color;
+	height: 100vh;
+	.welcome-section {
+		position: absolute;
+		top: 40%;
+		left: 50px;
+		.welcome-text {
+			text-transform: uppercase;
+			font-weight: 600;
+			h6 {
+				text-transform: capitalize;
+				font-weight: 600;
+				font-size: 18px;
+			}
+			h1 {
+				font-size: 72px;
+				text-transform: uppercase;
+				transition: .3s;
+				font-weight: 700;
+			}
+			p {
+				letter-spacing: 1px;
+			}
+		}
+	}
+	.welcome-img {
+		max-width: 80%;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		max-width: 35%;
+		img {
+			max-width: 80%
+		}
+	}
+}
+.section-header {
+	h3{
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+.about {
+	padding: 100px 0;
+	.about-content {
+		.btn-cv {
+			background: #000;
+			color: #fff;
+			border: 0;
+			width: 200px;
+			padding: 5px 10px;
+			margin-top: 30px;
+			transition: .3s;
+			&:hover, &:focus {
+				background: #fff;
+				color: #000;
+				border: 1px solid #000;
+			}
+		}
+	}
+}
+.portfolio {
+	background: $primary-color;
+	padding: 100px 0;
+	.portfolio-content {
+		text-align: center;
+		h3 {
+
+		}
+		p {
+
+		}
+		hr {
+			background-color: rgb(73, 70, 71);
+			width: 150px;
+			height: 2px;
+			border: none;
+		}
+
+	}
+	.projects-section {
+		margin-top: 50px;
+		.single-project {
+				min-height: 250px;
+				max-width: 370px;
+				position: relative;
+				margin-bottom: 20px;
+				background-size: aut o;
+				&:after {
+					position: absolute;
+					z-index: -1;
+					background-position: center center;
+					background-size: cover;
+					content: " ";
+				}
+				&:hover .portfolio-layer {
+					display: block;
+					background: #282425bd;
+					position: absolute;
+				}
+				.portfolio-layer {
+				display: none;
+				width: 100%;
+				height: 100%;
+				transition: .5s;
+				i {
+					padding: 10px;
+					color: #fff;
+					font-size: 50px;
+					position: relative;
+					top: 40%;
+					left: 50%;
+					margin-left: -25px
+				}
+				}
+			}
+			.project1 {
+				background: url("../img/work1.jpg") no-repeat 0/cover;
+			}
+			.project2 {
+				background: url("../img/work2.jpg") no-repeat 0/cover;
+			}
+		}
+	}
+	.contact {
+		margin: 100px 0;
+		.contact-area {
+			background: #fff none repeat scroll 0 0;
+			box-shadow: 0 0 30px #ededed;
+			padding: 70px 40px;
+			h2 {
+				text-transform: capitalize;
+				font-size: 18px;
+				letter-spacing: 1px;
+				font-weight: 600;
+			}
+			.contact-left {
+				.contact-form {
+					margin-top: 20px;
+					button {
+						width: 200px;
+						font-size: 16px;
+						font-weight: 600;
+						color: #fff;
+						background: #000;
+						border: none;
+						text-transform: uppercase;
+						padding: 5px 10px;
+						transition: .5s;
+						&:hover {
+							border: 1px solid #000;
+							background: #fff;
+							color: #000;
+						}
+					}
+				}
+			}
+			
+				.contact-right {
+					.address-box {
+						margin-top: 20px;
+					.single-address {
+						display: flex;
+						flex-wrap: nowrap;
+						margin-top: 20px;
+						.address-icon {
+							width: 40px;
+							height: 40px;
+							border: 1px solid #000;
+							border-radius: 50%;
+							align-items: center;
+							i {
+								font-size: 20px;
+								display: flex;
+								justify-content: center;
+								padding: 7px;
+							}
+						}
+						.address-details {
+							margin: 10px 0 0 10px;
+							a {
+								color: #000;
+							}
+						}
+					}
+				}
+			}
+		}
+	}

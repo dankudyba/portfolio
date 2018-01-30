@@ -8162,4 +8162,148 @@ body {
   top: -6px;
   transform: rotate(-45deg); }
 
+.main-section {
+  background: #EEEDED;
+  height: 100vh; }
+  .main-section .welcome-section {
+    position: absolute;
+    top: 40%;
+    left: 50px; }
+    .main-section .welcome-section .welcome-text {
+      text-transform: uppercase;
+      font-weight: 600; }
+      .main-section .welcome-section .welcome-text h6 {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 18px; }
+      .main-section .welcome-section .welcome-text h1 {
+        font-size: 72px;
+        text-transform: uppercase;
+        transition: .3s;
+        font-weight: 700; }
+      .main-section .welcome-section .welcome-text p {
+        letter-spacing: 1px; }
+  .main-section .welcome-img {
+    max-width: 80%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 35%; }
+    .main-section .welcome-img img {
+      max-width: 80%; }
+
+.section-header h3 {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.about {
+  padding: 100px 0; }
+  .about .about-content .btn-cv {
+    background: #000;
+    color: #fff;
+    border: 0;
+    width: 200px;
+    padding: 5px 10px;
+    margin-top: 30px;
+    transition: .3s; }
+    .about .about-content .btn-cv:hover, .about .about-content .btn-cv:focus {
+      background: #fff;
+      color: #000;
+      border: 1px solid #000; }
+
+.portfolio {
+  background: #EEEDED;
+  padding: 100px 0; }
+  .portfolio .portfolio-content {
+    text-align: center; }
+    .portfolio .portfolio-content hr {
+      background-color: #494647;
+      width: 150px;
+      height: 2px;
+      border: none; }
+  .portfolio .projects-section {
+    margin-top: 50px; }
+    .portfolio .projects-section .single-project {
+      min-height: 250px;
+      max-width: 370px;
+      position: relative;
+      margin-bottom: 20px;
+      background-size: aut o; }
+      .portfolio .projects-section .single-project:after {
+        position: absolute;
+        z-index: -1;
+        background-position: center center;
+        background-size: cover;
+        content: " "; }
+      .portfolio .projects-section .single-project:hover .portfolio-layer {
+        display: block;
+        background: #282425bd;
+        position: absolute; }
+      .portfolio .projects-section .single-project .portfolio-layer {
+        display: none;
+        width: 100%;
+        height: 100%;
+        transition: .5s; }
+        .portfolio .projects-section .single-project .portfolio-layer i {
+          padding: 10px;
+          color: #fff;
+          font-size: 50px;
+          position: relative;
+          top: 40%;
+          left: 50%;
+          margin-left: -25px; }
+    .portfolio .projects-section .project1 {
+      background: url("../img/work1.jpg") no-repeat 0/cover; }
+    .portfolio .projects-section .project2 {
+      background: url("../img/work2.jpg") no-repeat 0/cover; }
+
+.contact {
+  margin: 100px 0; }
+  .contact .contact-area {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 30px #ededed;
+    padding: 70px 40px; }
+    .contact .contact-area h2 {
+      text-transform: capitalize;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-weight: 600; }
+    .contact .contact-area .contact-left .contact-form {
+      margin-top: 20px; }
+      .contact .contact-area .contact-left .contact-form button {
+        width: 200px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        background: #000;
+        border: none;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        transition: .5s; }
+        .contact .contact-area .contact-left .contact-form button:hover {
+          border: 1px solid #000;
+          background: #fff;
+          color: #000; }
+    .contact .contact-area .contact-right .address-box {
+      margin-top: 20px; }
+      .contact .contact-area .contact-right .address-box .single-address {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 20px; }
+        .contact .contact-area .contact-right .address-box .single-address .address-icon {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #000;
+          border-radius: 50%;
+          align-items: center; }
+          .contact .contact-area .contact-right .address-box .single-address .address-icon i {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 7px; }
+        .contact .contact-area .contact-right .address-box .single-address .address-details {
+          margin: 10px 0 0 10px; }
+          .contact .contact-area .contact-right .address-box .single-address .address-details a {
+            color: #000; }
+
 /*# sourceMappingURL=style.css.map */
