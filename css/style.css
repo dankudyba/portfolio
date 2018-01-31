@@ -8127,11 +8127,6 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif; }
 
-body {
-  margin: 0;
-  padding: 50px 0;
-  font-family: 'Lato', sans-serif; }
-
 .navbar-brand {
   padding: 10px;
   padding-left: 25px; }
@@ -8144,7 +8139,8 @@ body {
     text-align: center; }
 
 .navbar-default {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28); }
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  background-color: #eeeded; }
 
 .navbar-toggle .icon-bar {
   position: relative;
@@ -8164,11 +8160,11 @@ body {
 
 .main-section {
   background: #EEEDED;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
   .main-section .welcome-section {
     position: absolute;
-    top: 40%;
-    left: 50px; }
+    top: 30vh; }
     .main-section .welcome-section .welcome-text {
       text-transform: uppercase;
       font-weight: 600; }
@@ -8228,7 +8224,7 @@ body {
       max-width: 370px;
       position: relative;
       margin-bottom: 20px;
-      background-size: aut o; }
+      transition: all 0.5s ease; }
       .portfolio .projects-section .single-project:after {
         position: absolute;
         z-index: -1;
@@ -8242,20 +8238,23 @@ body {
       .portfolio .projects-section .single-project .portfolio-layer {
         display: none;
         width: 100%;
-        height: 100%;
-        transition: .5s; }
+        height: 100%; }
         .portfolio .projects-section .single-project .portfolio-layer i {
           padding: 10px;
           color: #fff;
           font-size: 50px;
           position: relative;
           top: 40%;
-          left: 50%;
-          margin-left: -25px; }
+          left: 33%;
+          margin-left: -4px; }
     .portfolio .projects-section .project1 {
       background: url("../img/work1.jpg") no-repeat 0/cover; }
     .portfolio .projects-section .project2 {
       background: url("../img/work2.jpg") no-repeat 0/cover; }
+    .portfolio .projects-section .project3 {
+      background: url("../img/work3.jpg") no-repeat 0/cover; }
+    .portfolio .projects-section .project4 {
+      background: url("../img/work4.jpg") no-repeat 0/cover; }
 
 .contact {
   margin: 100px 0; }
@@ -8271,19 +8270,36 @@ body {
     .contact .contact-area .contact-left .contact-form {
       margin-top: 20px; }
       .contact .contact-area .contact-left .contact-form button {
-        width: 200px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        background: #000;
+        background-color: #000;
         border: none;
+        color: #FFF;
+        font-size: 16px;
+        padding: 10px;
+        width: 160px;
+        transition: all 0.5s;
+        cursor: pointer;
         text-transform: uppercase;
-        padding: 5px 10px;
-        transition: .5s; }
+        border-radius: 0;
+        font-weight: 600; }
         .contact .contact-area .contact-left .contact-form button:hover {
           border: 1px solid #000;
           background: #fff;
           color: #000; }
+          .contact .contact-area .contact-left .contact-form button:hover span:after {
+            opacity: 1;
+            right: 0; }
+        .contact .contact-area .contact-left .contact-form button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s; }
+          .contact .contact-area .contact-left .contact-form button span:after {
+            content: '\00bb';
+            margin-left: 10px;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s; }
     .contact .contact-area .contact-right .address-box {
       margin-top: 20px; }
       .contact .contact-area .contact-right .address-box .single-address {
@@ -8305,5 +8321,15 @@ body {
           margin: 10px 0 0 10px; }
           .contact .contact-area .contact-right .address-box .single-address .address-details a {
             color: #000; }
+
+footer .social-box {
+  text-align: center;
+  font-size: 30px; }
+  footer .social-box a {
+    padding: 10px; }
+    footer .social-box a i {
+      color: #9ea29c; }
+    footer .social-box a:hover i {
+      color: #000; }
 
 /*# sourceMappingURL=style.css.map */
